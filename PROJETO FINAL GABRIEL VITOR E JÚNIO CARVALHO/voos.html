@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Voos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<script type="text/javascript">
+ function pag() {
+  window.open("preços.html")
+ }
+</script>
+</head>
+<body>
+<!--MENU-->
+
+<nav id="menu" class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img id="logo" src="img/logoteste.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="hoteis.html">Hotéis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="voos.html">Voos</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-white" href="empresa.html">Empresa</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-white" href="quemsomos.html">Quem Somos</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-white" href="parceiros.html">Parceiros</a>
+        </li>
+      </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <button class="btn btn-light me-md-3" type="button"><a href="login.html">ENTRAR</a></button>
+</div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="dundoform">
+	<img src="img/voos.png" class="d-block w-100" alt="...">
+<div>
+	<div class="hoteus mx-auto py-lg-3" style="width: 1000px;">
+    <div class="card text-black bg-light mb-3">
+      <div class="card-body">
+  <form class="row g-3">
+  	<span><h3>Voos</h3></span>
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">Para onde você vai?</label>
+    <input type="text" class="form-control" placeholder="Busque cidade ou aeroporto" id="validationDefault01" value="" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">Data</label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault01" class="form-label">Escolha o período</label>
+    <input type="date" pattern="" class="form-control" placeholder="Busque cidade ou aeroporto" id="validationDefault01" value="2021-11-27" required>
+  </div>
+ <div class="d-grid gap-2 col-md-2">
+  <button class="btn btn-dark" type="submit" onclick="pag()">Buscar Vôos</button>
+</div>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--POSICIONAR OS CARTÕES NA PÁGINA-->
+<div class="container py-lg-3">
+
+<!--CARDS COMEÇAM AQUI-->
+<div class="card-group">
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/Maceió.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Maceió</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 119,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/São Paulo.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">São Paulo</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 159,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/RJ.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Rio de Janeiro</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 159,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/Salvador.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Salvador</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 135,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/São Luís.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">São Luís</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 145,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+
+</div>
+
+<p></p>
+<div class="card-group">
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/Florianopolis.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Florianópolis</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 119,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/Brasília.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Brasília</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 159,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/Recife.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Recife</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 159,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/Fernando de Noronha.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Fernando de Noronha</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 135,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+<div id="card" align="center" class="cartao card ms-2 shadow text-white" style="width: 18rem;">
+  <img src="img/Foz do Iguaçu.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Foz do Iguaçu</h5>
+    <p class="card-text">Viaje com condições especiais!.<h6>A partir de R$ 145,00</h6></p>
+    <a id="btnvermais" href="blog.html" class="btn btn-light">VER MAIS</a>
+  </div>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="divider"></div>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <center><a href="blog.html"><button style="width:80%" class="btn btn-outline-danger" type="button"> VER TODOS OS DESTINOS</button></a></center>
+</div>
+<br>
+
+<!--BANNER APP-->
+
+<div class="banneranimado"><center><img id="bannergif" src="img/Banner Animado.gif"></div>
+
+<!--BOTÃO VOLTAR OU PRÓXIMO-->
+
+<div style="padding-top: 60px;">
+<div class="btn-group position-absolute top-5 start-50 translate-middle" role="group" aria-label="Basic example">
+  <button id="btn_navegacao" type="button" class="btn btn-primary"><a class="buttonnavegacao" href="hoteis.html">← Voltar</button></a>
+  <button id="btn_navegacao" type="button" class="btn btn-primary"><a class="buttonnavegacao" href="index.html">Home</button></a>
+  <button id="btn_navegacao" type="button" class="btn btn-primary"><a class="buttonnavegacao" href="empresa.html">Próximo →</button></a>
+</div>
+</div>
+</div>
+
+<hr class="divider">
+
+<!--CRIAR O RODAPÉ-->
+<footer class="py-5">
+  <div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2">
+        <h5>Fly Together</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-muted">Contato</a></li>
+          <li class="nav-item mb-2"><a href="preços.html" class="nav-link p-0 text-muted">Preços</a></li>
+          <li class="nav-item mb-2"><a href="voos.html" class="nav-link p-0 text-muted">Voos</a></li>
+          <li class="nav-item mb-2"><a href="quemsomos.html" class="nav-link p-0 text-muted">Quem somos</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Assine para receber nossos recursos</h5>
+          <p>Diversos recursos e promoções para assinantes.</p>
+          <div class="assinar d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Endereço de Email">
+            <button class="btn btn-primary" type="button"><a href="cadastro.html">Assinar</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>© 2021 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><b>Júnio Carvalho e Gabriel Vitor</b><use xlink:href="#twitter"></use></svg></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</footer>    
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
